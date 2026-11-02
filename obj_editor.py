@@ -16,7 +16,7 @@ def process_obj_file(
     input_path: Path,
     x_origo: float = 25490000,
     y_origo: float = 6668000,
-    header: str = "# Helsinki city photogrammetric model 2024, License CC-BY-40."
+    header: str = "# Helsinki city photogrammetric model 2024, License CC-BY-40. Coordinate system EPSG:3879 GK25 and elevation coordinate system N2000 EPSG:3900."
 ) -> Tuple[Path, int, int]:
     """
     Process a single OBJ file and write to a new file with '_local' suffix.

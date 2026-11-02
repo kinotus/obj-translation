@@ -14,7 +14,7 @@ A fast, parallelized Python script for editing OBJ 3D model files. Transforms ve
 
 ## What It Does
 
-For each OBJ file:
+obj_editor.py, for each OBJ file:
 1. **Write header lines** at the beginning:
    - First line: Custom header comment (default: "# Helsinki city photogrammetric model 2024, License CC-BY-40.")
    - Second line: Origin values (# x-origo: XXXXX, y-origo: XXXXX)
@@ -26,6 +26,8 @@ For each OBJ file:
    - Keep each coordinate's original number of decimal places
 3. **Preserve all other lines** (comments, faces, normals, etc.) unchanged
 4. **Output** to file with `_local` suffix
+
+**obj_folder_to_glb.py** takes a folder of OBJ's (in local coordinates) and converts first to .blend and then to .glb. Blender 5.2 tested.
 
 ## Installation
 

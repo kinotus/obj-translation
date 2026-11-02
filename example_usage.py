@@ -40,7 +40,7 @@ if __name__ == '__main__':
                 obj_files,
                 x_origo=25490000,
                 y_origo=6668000,
-                header="# My custom header"
+                header="# My custom header, including model license and a coordinate system as EPSG-code xxxx."
             )
         else:
             print(f"No OBJ files found in {data_folder}")
